@@ -1,0 +1,72 @@
+@charset "utf-8";
+  *{
+	  padding:0px;
+	  margin:0px;
+	  }
+  body{
+	  background-image: url("../images/bgindex.jpg");
+	  background-size: 1347px 1680px;
+	  position:relative;
+	  left:50%;
+	  transform:translate(-50%);
+	  }
+  #footer{
+	  	position:absolute;
+	  	width:1000px;
+	  	height:130px;
+	  	top:1550px;
+	  	text-align: right;
+	  	color: floralwhite;
+	  	background-image: url("../images/footer1.gif");
+	    }
+		#box{
+			  height:1550px;
+			  width:1000px;
+			  background-color: white;
+			  position:relative;
+			  left:50%;
+			  transform:translate(-50%);
+		}	
+			#nav{
+			  height:51px;
+			  width:1000px;
+			  background-image: url("../images/linkbg.jpg");
+			  margin-top:-3px;
+				}
+			#nav a{
+				padding:0 40px 0 10px;
+				text-decoration:none;
+				color:white;
+				border-right: solid 1px #999;
+			    }
+			#nav li{
+				float:left;
+				height: 51px;
+				line-height:51px;
+				width:142px;
+				vertical-align:middle;
+				text-align:center;
+				}
+			#nav .end a{
+				border-right:none;
+				}
+			#sidebar{
+				width: 300px;
+				height: 1120px;
+				float:left;
+				margin: 0px 0px 0px 30px;
+				padding-top: 18px;
+				border-right:solid 0.3px #999;
+			}
+			#content{
+				float:left;
+				width: 580px;
+				height: 858px;
+				margin: 0px 0px 0px 30px;
+				padding-top: 16px;
+				line-height: 30px;
+				font-size: 16px;
+				font-family: "微软雅黑";
+				font-weight:500;
+				color:dimgrey;
+			}

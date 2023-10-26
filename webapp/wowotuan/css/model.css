@@ -1,0 +1,12 @@
+@charset "utf-8";
+  *{
+	  padding:0px;
+	  margin:0px;
+	  }
+  body{
+	  background-image: url("../images/bgindex.jpg");
+	  background-size: 1347px 1130px;
+	  position:relative;
+	  left:50%;
+	  transform:translate(-50%);
+	  }
