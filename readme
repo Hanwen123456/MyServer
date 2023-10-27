@@ -1,4 +1,4 @@
-访问服务器的URL: http://localhost:8090/wowotuan/html页面名.html
+访问服务器的URL: http://localhost:8090/myweb/html页面名.html
 
 
 Web服务器是一个基于HTTP协议的服务器软件。它主要用于接收来自Web浏览器的请求，并向浏览器发送HTML和其他文件。
