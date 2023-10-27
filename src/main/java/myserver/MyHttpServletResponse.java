@@ -18,7 +18,7 @@ public class MyHttpServletResponse {
     }
 
     public void send(){
-        String uri = this.request.getRequestURI();  //wowotuan/index.html
+        String uri = this.request.getRequestURI();  //myweb/index.html
         String realpath = this.request.getRealPath();  //服务器路径
         File f = new File(realpath,uri);
         byte[] fileContent = null;
@@ -53,7 +53,7 @@ public class MyHttpServletResponse {
     private String gen200(byte[] fileContent) {
         String protocol200 = "";
         //先取出请求的资源的类型
-        String uri = this.request.getRequestURI();   //   /wowotuan/index.html
+        String uri = this.request.getRequestURI();   //   /myweb/index.html
         //从uri中取后缀名
         int index =  uri.lastIndexOf(".");
         if(index>=0){

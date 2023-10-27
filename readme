@@ -1,5 +1,8 @@
-    Web服务器是一个基于HTTP协议的服务器软件。它主要用于接收来自Web浏览器的请求，并向浏览器发送HTML和其他文件。
-    Web服务器主要的职责是处理从浏览器发送的请求，处理Web页面、图像和其他文件的静态资源，并将它们返回给请求的浏览器.
+访问服务器的URL: http://localhost:8090/wowotuan/html页面名.html
+
+
+Web服务器是一个基于HTTP协议的服务器软件。它主要用于接收来自Web浏览器的请求，并向浏览器发送HTML和其他文件。
+Web服务器主要的职责是处理从浏览器发送的请求，处理Web页面、图像和其他文件的静态资源，并将它们返回给请求的浏览器.
 
 Web服务器：　ServerSocket+Socket
 while( true){
@@ -15,7 +18,7 @@ class Task implements Runnable{
 		//1. 以流的方式读取http的请求, 得到请求的字符串
 		//2. 对字符串完成截取.     StringTokenizer     nextToken()
 		//3. ***从 StringTokenizer中取出各种值 如下:
-		//4.  ****用户路径(指的是你的项目tomcat的路径)  System.getProperty("user.dir")+ File.separator +"webapps"      +   根据要访问的资源:           /wowotuan/index.html
+		//4.  ****用户路径(指的是你的项目tomcat的路径)  System.getProperty("user.dir")+ File.separator +"webapp"      +   根据要访问的资源:           /wowotuan/index.html
 		//5. 以输入流从磁盘读取文件
 		//6. ***拼接响应
 	}
@@ -30,9 +33,9 @@ Content-Length: 响应实体的字节数
 空行
 响应的内容
 
-http://localhost:8080/wowotuan/index.html?uname=zy&pwd=a
+http://localhost:8080/myweb/index.html?uname=hw&pwd=a
 ******http请求: 格式
-GET /wowotuan/index.html?uname=zy&pwd=a HTTP/1.1
+GET /myweb/index.html?uname=zy&pwd=a HTTP/1.1
 host: localhost
 User-Agent: Mozillaxxxxxxxx
 xxx: xxx
@@ -41,12 +44,12 @@ yyyy: yyy
 
 
 method:         GET
-requestURI:    /wowotuan/index.html?uname=zy&pwd=a
+requestURI:    /myweb/index.html?uname=hw&pwd=a
 queryString:  ?uname=zy&pwd=a
 protocol:      HTTP/1.1
 scheme:        http
-contextPath:   /wowotuan
+contextPath:   /myweb
 
-parameterMap  Map<String,String[]>     "uname"-> zy    "pwd"->a
+parameterMap  Map<String,String[]>     "uname"-> hw    "pwd"->a
 
 关于System.getProperty( "环境变量" )

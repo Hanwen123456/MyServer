@@ -65,7 +65,7 @@ public class MyHttpServletRequest {
      *             请求头域:  值*
      *             空行
      *             请求实体
-     *             资源地址:  /wowotuan/index.html?uname=a&pwd=b
+     *             资源地址:  /myweb/index.html?uname=a&pwd=b
      */
     private void parseRequestInfoString(String requestInfoString) {
         StringTokenizer st = new StringTokenizer(requestInfoString); //按空格切割
